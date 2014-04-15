@@ -1,0 +1,4 @@
+golden_cage_shop:
+    resource: "@GoldenCageShopBundle/Resources/config/routing.yml"
+    prefix:   /
+

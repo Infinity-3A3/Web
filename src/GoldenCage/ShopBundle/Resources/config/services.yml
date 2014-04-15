@@ -1,0 +1,7 @@
+parameters:
+#    golden_cage_shop.example.class: GoldenCage\ShopBundle\Example
+
+services:
+#    golden_cage_shop.example:
+#        class: %golden_cage_shop.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
