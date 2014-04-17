@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/style.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/jquery-ui.css') }}" /> 
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/responsive-options.css') }}" /> 
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/bootstrap.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/megamenu.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/bootstrap-responsive.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/jquery.formstyler.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/elastic-slideshow.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/dlmenu.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/smartwizard.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/font-awesome.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/multizoom.css') }}" /> 
+<link rel="stylesheet" type="text/css" href="{{ asset('bundles/GoldenCageShop/css/jquery.modal.css') }}"  media="screen" />
+<link rel="shortcut icon" href="{{ asset('bundles/GoldenCageShop/images/favicon.ico') }}">
+
+<script src{{ asset('bundles/GoldenCageShop/js/modernizr.custom.js') }}></script>
+
+
+<title>Right Choice</title>
+
+</head>
+<body>
+{% block body %}
+{% endblock %}
+</body>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.eislideshow.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.easing.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.dlmenu.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.smartwizard.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.formstyler.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.nicescroll.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.carouFredSel-6.2.1-packed.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.ui.core.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.ui.widget.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.ui.mouse.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.ui.slider.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.ui.tabs.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.modal.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/jquery.jcountdown.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/GoldenCageShop/js/script.js') }}"></script>
+<script type="text/javascript">
+//<![CDATA[
+	jQuery(document).ready(function($){
+		
+		// Activate Sign Up Modal Block on Page Load
+		$("#sign-up-modal").modal();
+		
+		
+		// Daily Deal CountDown Clock Settings
+		var date = new Date().getTime();			// This example is just to show how this function works.
+		var new_date = new Date(date + 86400000);	// You can set your own time whenever you want.
+		var n = new_date.toUTCString();				// 'date' value is given in milliseconds.
+		
+		$("#time").countdown({
+			date: new_date,
+			yearsAndMonths: true,
+			leadingZero: true
+		});
+		
+		
+		// CarouFredSel Functions
+		$('#carouFredSel-big').carouFredSel({
+			responsive:true,
+			height: 'auto',
+			prev: '#prev_big',
+			next: '#next_big',
+			auto: {
+					timeoutDuration: 10000,
+					pauseOnHover: true
+				  }
+		})/*.find("li").hover(
+			function() { $(this).find("div").slideDown(); },
+			function() { $(this).find("div").slideUp();}
+		)*/;
+			
+		$('#productBestSale').carouFredSel({
+			responsive:true,
+			width: '100%',
+			scroll: {duration:500,items:1},
+			prev: '#prev_productBestSale',
+			next: '#next_productBestSale',
+			auto: false,
+			items: {
+				height: 'auto',
+			//	height: '30%',	//	optionally resize item-height
+				visible: {
+					min: 1,
+					max: 6
+				}
+			}
+		});
+		$('#productNew').carouFredSel({
+			responsive:true,
+			width: '100%',
+			scroll: {duration:500,items:1},
+			prev: '#prev_productNew',
+			next: '#next_productNew',
+			auto: false,
+			items: {
+				height: 'auto',
+			//	height: '30%',	//	optionally resize item-height
+				visible: {
+					min: 1,
+					max: 6
+				}
+			}
+		});
+		$('#productFeatured').carouFredSel({
+			responsive:true,
+			width: '100%',
+			scroll: {duration:500,items:1},
+			prev: '#prev_productFeatured',
+			next: '#next_productFeatured',
+			auto: false,
+			items: {
+				height: 'auto',
+			//	height: '30%',	//	optionally resize item-height
+				visible: {
+					min: 1,
+					max: 6
+				}
+			}
+		});
+		$('#partner').carouFredSel({
+			responsive: true,
+			width: '100%',
+			scroll: 1,
+			items: {
+				height:'100%',
+			//	height: '30%',	//	optionally resize item-height
+				visible: {
+					min: 1,
+					max: 6
+				}
+			}
+		});
+	});
+//]]>
+</script>
+
+</html>
