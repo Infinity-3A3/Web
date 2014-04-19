@@ -1,9 +1,8 @@
 // JavaScript Document
-jQuery(document).ready(function($){
-	
+$(document).ready(function(){
 	// Add Smooth scroll Plugin to the page. Best effect is reached on Tablets & Smartphones.
 	$("html").niceScroll({cursorborder:"",cursorcolor:"#cccccc",scrollspeed:100});
-	
+
 	
 	/* Shopping Cart Items */
 	$(".header-shopping-cart div .toggle-items").click(function(){ // Show/Hide Shopping Cart Items
@@ -36,6 +35,7 @@ jQuery(document).ready(function($){
 	// Product Hover Animations
 	$(".product").hover(
 		function () {
+            alert("test h");
 			if ($(document).width() > 979) {
 				var pr = $(this);
 				pr.find(".product-preview img").animate({"width": "250px"}, 1000);
