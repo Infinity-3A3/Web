@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
 	
 	/* Shopping Cart Items */
 	$(".header-shopping-cart div .toggle-items").click(function(){ // Show/Hide Shopping Cart Items
-		if ($(".header-shopping-cart-items").css("display") == "none" && $("#items-amount").html() > 0) {
+		if ($(".header-shopping-cart-items").css("display") === "none" && $("#items-amount").html() > 0) {
 			$(".header-shopping-cart-items").fadeIn();
 			$(this).find("i").removeClass("icon-angle-right").addClass("icon-angle-down");
 		}
@@ -23,7 +23,7 @@ jQuery(document).ready(function($){
 		if (amount > 0) {
 			$("#items-amount").html(amount - 1); // Dicrease the amount of SC items
 			$(this).parent().slideUp(); // Hide this item
-			if (amount - 1 == 0) {
+			if (amount - 1 === 0) {
 				$(".header-shopping-cart-items").fadeOut(); // When there's no any items in the cart, hide the items block
 				$(".header-shopping-cart div .toggle-items i").fadeOut();
 			}
@@ -59,8 +59,8 @@ jQuery(document).ready(function($){
 	// Categories Menu Manipulations
 	$(".categories li a").click(function() {
 		var sm = $(this).next();
-		if (sm.attr("class") == "categories-submenu") {
-			if (sm.css("display") == "none") {
+		if (sm.attr("class") === "categories-submenu") {
+			if (sm.css("display") === "none") {
 				$(this).prev().removeClass("icon-angle-right").addClass("icon-angle-down");
 				$(this).next().slideDown();
 			}
@@ -131,7 +131,7 @@ jQuery(document).ready(function($){
 		$(this).parent().parent().fadeOut("normal", function() {
 			// Recalculate Total information
 			var leftItems = $(".shopping-cart-summary").find("tbody tr:not(:hidden)").get();
-			if (leftItems.length == 1) // If no items left in the shopping cart, we'll remove the whole table.
+			if (leftItems.length === 1) // If no items left in the shopping cart, we'll remove the whole table.
 				$(".shopping-cart-summary").fadeOut("normal", function() {
 					$(".stepContainer").height($(".stepContainer").find("div:not(:hidden)").height());
 					$(this).prev().html("No products in your cart.");
@@ -153,7 +153,7 @@ jQuery(document).ready(function($){
 	
 	// Scroll to top button
 	$(window).scroll(function() { // hide/show button when page is scrolled
-		if($(this).scrollTop() != 0) {
+		if($(this).scrollTop() !== 0) {
 			$('#toTop').fadeIn();	
 		} else {
 			$('#toTop').fadeOut();

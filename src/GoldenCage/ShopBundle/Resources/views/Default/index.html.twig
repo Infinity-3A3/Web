@@ -1,2 +1,635 @@
 {% extends "GoldenCageShopBundle::template.html.twig" %}
 
+{% block body %}
+<!--MAKE COPY OF THIS FILE AND USE IT AS IT IS-->
+<!-- FOLLOW ASSETS path -->
+<!-- Don't hand craft path -->
+
+		<!--BLOCK TITLE-->
+		<h3 class="block-title">Bestsellers</h3>
+		<!--PRODUCTS BLOCK-->
+		<div class="products list_carousel responsive">
+			<ul id="productBestSale">
+				<li>
+				<div class="product fl">
+					<div class="product-new">
+					</div>
+					<div class="product-preview">
+						<img src="{{ asset('bundles/GoldenCageShop/images/products/1.jpg') }}" alt="product">
+					</div>
+					<div class="product-info">
+						<h5><a href="product-details.html">Satin Ankle Dress</a></h5>
+						<h4><span></span> $149.99</h4>
+						<div class="button-box">
+							<div>
+								<i class="icon-shopping-cart"></i>
+								<span>Add to cart</span>
+							</div>
+							<div>
+								<i class="icon-refresh"></i>
+							</div>
+							<div>
+								<i class="icon-heart"></i>
+							</div>
+						</div>
+					</div>
+					<div class="product-rating">
+						<div class="stars">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="product fl">
+					<div class="product-sale">
+					</div>
+					<div class="product-preview">
+						<img src="{{ asset('bundles/GoldenCageShop/images/products/2.jpg') }}" alt="product">
+					</div>
+					<div class="product-info">
+						<h5><a href="product-details.html">Chiffon V-Neckline Dress</a></h5>
+						<h4><span>$39.99</span> $35.99</h4>
+						<div class="button-box">
+							<div>
+								<i class="icon-shopping-cart"></i>
+								<span>Add to cart</span>
+							</div>
+							<div>
+								<i class="icon-refresh"></i>
+							</div>
+							<div>
+								<i class="icon-heart"></i>
+							</div>
+						</div>
+					</div>
+					<div class="product-rating">
+						<div class="stars">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="product fl">
+					<div class="product-new">
+					</div>
+					<div class="product-sale">
+					</div>
+					<div class="product-preview">
+						<img src="{{ asset('bundles/GoldenCageShop/images/products/5.jpg') }}" alt="product">
+					</div>
+					<div class="product-info">
+						<h5><a href="product-details.html">Cocktail Seremony Dress</a></h5>
+						<h4><span>$139.99</span> $129.99</h4>
+						<div class="button-box">
+							<div>
+								<i class="icon-shopping-cart"></i>
+								<span>Add to cart</span>
+							</div>
+							<div>
+								<i class="icon-refresh"></i>
+							</div>
+							<div>
+								<i class="icon-heart"></i>
+							</div>
+						</div>
+					</div>
+					<div class="product-rating">
+						<div class="stars">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="product fl">
+					<div class="product-preview">
+						<img src="{{ asset('bundles/GoldenCageShop/images/products/4.jpg') }}" alt="product">
+					</div>
+					<div class="product-info">
+						<h5><a href="product-details.html">Chiffon Bodice Dress</a></h5>
+						<h4><span></span> $149.99</h4>
+						<div class="button-box">
+							<div>
+								<i class="icon-shopping-cart"></i>
+								<span>Add to cart</span>
+							</div>
+							<div>
+								<i class="icon-refresh"></i>
+							</div>
+							<div>
+								<i class="icon-heart"></i>
+							</div>
+						</div>
+					</div>
+					<div class="product-rating">
+						<div class="stars">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</div>
+				</li>
+				<li>
+				<div class="product fl">
+					<div class="product-new">
+					</div>
+					<div class="product-sale">
+					</div>
+					<div class="product-preview">
+						<img src="{{ asset('bundles/GoldenCageShop/images/products/3.jpg') }}" alt="product">
+					</div>
+					<div class="product-info">
+						<h5><a href="product-details.html">Silk-like Satin Dress</a></h5>
+						<h4><span>$60.00</span> $49.50</h4>
+						<div class="button-box">
+							<div>
+								<i class="icon-shopping-cart"></i>
+								<span>Add to cart</span>
+							</div>
+							<div>
+								<i class="icon-refresh"></i>
+							</div>
+							<div>
+								<i class="icon-heart"></i>
+							</div>
+						</div>
+					</div>
+					<div class="product-rating">
+						<div class="stars">
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+							<span class="star"></span>
+						</div>
+					</div>
+				</div>
+				</li>
+			</ul>
+			<div class="clearfix">
+			</div>
+			<div class="carousel_nav">
+				<a id="prev_productBestSale" class="prev" href="#">&lt;</a>
+				<a id="next_productBestSale" class="next" href="#">&gt;</a>
+			</div>
+		</div>
+		<!--/PRODUCTS BLOCK-->
+		<div class="clearfix">
+		</div>
+		<!--BANNER-->
+		<div class="banner">
+			<img src="{{ asset('bundles/GoldenCageShop/images/banner2.jpg') }}"/>
+		</div>
+		<!--/BANNER-->
+		<div class="clearfix">
+		</div>
+		<div class="span8 ml-0 fl">
+			<!--BLOCK TITLE-->
+			<h3 class="block-title">New Products</h3>
+			<!--PRODUCTS BLOCK-->
+			<div class="products list_carousel responsive">
+				<ul id="productNew">
+					<li>
+					<div class="product fl">
+						<div class="product-new">
+						</div>
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/1.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Satin Ankle Dress</a></h5>
+							<h4><span></span> $149.99</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="product fl">
+						<div class="product-sale">
+						</div>
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/2.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Chiffon V-Neckline Dress</a></h5>
+							<h4><span>$39.99</span> $35.99</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="product fl">
+						<div class="product-new">
+						</div>
+						<div class="product-sale">
+						</div>
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/5.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Cocktail Seremony Dress</a></h5>
+							<h4><span>$139.99</span> $129.99</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="product fl">
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/4.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Chiffon Bodice Dress</a></h5>
+							<h4><span></span> $149.99</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="product fl">
+						<div class="product-new">
+						</div>
+						<div class="product-sale">
+						</div>
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/3.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Silk-like Satin Dress</a></h5>
+							<h4><span>$60.00</span> $49.50</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+								<span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+				</ul>
+
+				<div class="clearfix">
+				</div>
+				<div class="carousel_nav">
+					<a id="prev_productNew" class="prev" href="#">&lt;</a>
+					<a id="next_productNew" class="next" href="#">&gt;</a>
+				</div>
+			</div>
+			<!--/PRODUCTS BLOCK-->
+			<!--RULER LINE-->
+			<div class="ruler">
+			</div>
+			<!--BLOCK TITLE-->
+			<h3 class="block-title">Featured Products</h3>
+			<!--PRODUCTS BLOCK-->
+			<div class="products list_carousel responsive">
+				<ul id="productFeatured">
+					<li>
+					<div class="product fl">
+						<div class="product-new">
+						</div>
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/1.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Satin Ankle Dress</a></h5>
+							<h4><span></span> $149.99</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="product fl">
+						<div class="product-sale">
+						</div>
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/2.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Chiffon V-Neckline Dress</a></h5>
+							<h4><span>$39.99</span> $35.99</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="product fl">
+						<div class="product-new">
+						</div>
+						<div class="product-sale">
+						</div>
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/5.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Cocktail Seremony Dress</a></h5>
+							<h4><span>$139.99</span> $129.99</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="product fl">
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/4.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Chiffon Bodice Dress</a></h5>
+							<h4><span></span> $149.99</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+					<li>
+					<div class="product fl">
+						<div class="product-new">
+						</div>
+						<div class="product-sale">
+						</div>
+						<div class="product-preview">
+							<img src="{{ asset('bundles/GoldenCageShop/images/products/3.jpg') }}" alt="product">
+						</div>
+						<div class="product-info">
+							<h5><a href="product-details.html">Silk-like Satin Dress</a></h5>
+							<h4><span>$60.00</span> $49.50</h4>
+							<div class="button-box">
+								<div>
+									<i class="icon-shopping-cart"></i>
+									<span>Add to cart</span>
+								</div>
+								<div>
+									<i class="icon-refresh"></i>
+								</div>
+								<div>
+									<i class="icon-heart"></i>
+								</div>
+							</div>
+						</div>
+						<div class="product-rating">
+							<div class="stars">
+								<span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span>
+							</div>
+						</div>
+					</div>
+					</li>
+				</ul>
+				<div class="carousel_nav">
+					<a id="prev_productFeatured" class="prev" href="#">&lt;</a>
+					<a id="next_productFeatured" class="next" href="#">&gt;</a>
+				</div>
+				<div class="clearfix">
+				</div>
+			</div>
+			<!--/PRODUCTS BLOCK-->
+		</div>
+		<div class="vertical span4 ml-0 fr">
+			<!--BLOCK TITLE-->
+			<h3 class="block-title">Popular News</h3>
+			<!--POPULAR BLOCK-->
+			<ul class="popular">
+				<li class="clearfix">
+				<div class="popular-img fl">
+					<img src="{{ asset('bundles/GoldenCageShop/images/popular3.jpg') }}">
+				</div>
+				<a href="#">Announced new summer collection for family</a><br>
+				<strong>25 May, 2013.</strong></li>
+				<li class="clearfix">
+				<div class="popular-img fl">
+					<img src="{{ asset('bundles/GoldenCageShop/images/popular2.jpg') }}">
+				</div>
+				<a href="#">Announced top 20 brends and popular fashion collection</a><br>
+				<strong>25 May, 2013.</strong></li>
+				<li class="clearfix">
+				<div class="popular-img fl">
+					<img src="{{ asset('bundles/GoldenCageShop/images/popular3.jpg') }}">
+				</div>
+				<a href="#">Announced new summer collection for family</a><br>
+				<strong>25 May, 2013.</strong></li>
+			</ul>
+			<!--/POPULAR BLOCK-->
+			<div class="clearfix">
+			</div>
+			<!--BLOCK TITLE-->
+			<h3 class="block-title">Daily Deal</h3>
+            <!--Daily Deal-->
+            <div class="daily-deal fl">
+                <div class="product-deal">79% off</div>
+                <div class="product-preview">
+                    <img src="{{ asset('bundles/GoldenCageShop/images/products/1.jpg') }}" alt="product">
+                </div>
+                <div class="product-info">
+                    <h5><a href="product-details.html">Satin Ankle Dress</a></h5>
+                    <h4><span>was $149.99</span> $31.49</h4>
+                </div>
+                <div class="countdown">
+                	<p id="time" class="time"></p>
+                </div>
+            </div>
+            <!--/Daily Deal-->
+			<div class="clearfix">
+			</div>
+			<!--BLOCK TITLE-->
+			<h3 class="block-title">Newsletter</h3>
+			<!--NEWSLETTER FORM-->
+			<form action="#" method="post" class="fl">
+				<input type="email" id="email" name="email"/>
+				<button></button>
+			</form>
+			<!--/NEWSLETTER FORM-->
+			<div class="clearfix">
+			</div>
+			<!--BLOCK TITLE-->
+			<h3 class="block-title">Information</h3>
+			<!--INFORMATION LIST-->
+			<ul class="icons">
+				<li><i class="icon-angle-right"></i><a href="#">Delivery</a></li>
+				<li><i class="icon-angle-right"></i><a href="#">Legal Notice</a></li>
+				<li><i class="icon-angle-right"></i><a href="#">Condition of use</a></li>
+				<li><i class="icon-angle-right"></i><a href="#">About us</a></li>
+				<li><i class="icon-angle-right"></i><a href="#">Secure payment</a></li>
+				<li><i class="icon-angle-right"></i><a href="#">Our stores</a></li>
+			</ul>
+			<!--/INFORMATION LIST-->
+		</div>
+		<div class="clearfix">
+		</div>
+	
+	
+
+{% endblock %}
